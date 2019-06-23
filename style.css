@@ -121,3 +121,26 @@ h1 {
     animation: circulo .5s .3s forwards;
     margin: -45px 0 0 -45px;
 }
+
+@keyframes circulo{
+    0%{
+        border-color: transparent;
+        transform: rotate(0deg);
+    }
+
+    25%{
+        border-color: transparent #fff transparent transparent;
+    }
+
+    50%{
+        border-color: transparent #fff #fff transparent;
+    }
+
+    75%{
+        border-color: transparent #fff #fff #fff;
+    }
+    100%{
+        border-color:  #fff;
+        transform: rotate(-700deg);
+    }
+}
